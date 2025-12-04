@@ -1,0 +1,19 @@
+A.) On the Android device enable USB tethering in settings:
+
+     Settings -> Network and Internet -> USB Tethering -> ON
+
+B.) Install any GPS gate/splitter, Franson GpsGate 2.6 is recommended and has been verified to work with SoloTrack.
+
+C.) You will need your Android Device's IPV4 address:
+
+	1.) Open Control Panel  and select Network and Sharing Center 
+	2.) Find the ethernet connection created when USB tethering has been turned on inside of 	Android.
+	3.) Select Details.
+	4.) Locate IPv4 Default Gateway. This is the Android device's TCP/IP address.
+
+D.) Create a virtual COM port:
+	1.) Open Franson GpsGate 2.6 and Select the Input tab. Select TCP/IP Client. Then 	select Settings. 
+	2.) Input the Android device's IPv4 address into the Server box. Input "5555" into the Port box. 	Press OK.
+	3.) Select the Output tab and select Virtual COM Port from the drop- down and select Add. 
+	4.) Select a virtual COM port number that is currently unused by the PC. Click Ok.
+	5.) Return to the Input tab and select the Open/Close button. When set to Open, the message: 	"Running OK!" and "Unknown data is coming in" will be displayed.
